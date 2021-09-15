@@ -7,16 +7,29 @@ body {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-size: 16px;
+    margin: 0;
+    font-weight: 500;
 }
 
 .subheadings {
     font-size: 36px;
     line-height: 54px;
     font-weight: bold;
+    font-weight: 700;
+    margin-bottom: 50px;
 }
 
 .product-subheading {
     font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.under-subheading {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 /*NAVIGATION BAR*/
@@ -37,6 +50,7 @@ body {
 .left-nav-item a {
     text-decoration: none;
     color: #2F281E;
+    margin-right: 15px;
 }
 
 /*Right nav*/
@@ -53,20 +67,25 @@ body {
     width: 102px;
     height: 46px;
     background-color: white;
-    border-color: rgb(132, 146, 184);
-    border-radius: 5%;
+    border: 1px solid rgb(132, 146, 184);
+    border-radius: 4px;
+    margin-right: 15px;
 }
 
 .sign-up-btn {
     width: 110px;
     height: 46px;
+    border-radius: 4px;
+}
+
+.sign-up-btn, .start-btn, .sign-up-now-btn, .sign-up-now-btn-2 {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     background-color: #FF9900;
     color: white;
     border: none;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 
 .left-nav li, .right-nav li {
@@ -84,7 +103,7 @@ body {
 /*FIRST SECTION*/
 .first-section {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .main-title {
@@ -92,6 +111,7 @@ body {
     font-size: 44px;
     line-height: 54px;
     margin-top: 211px;
+    margin-bottom: 50px;
     width: 518px;
     height: 108px;
 }
@@ -120,26 +140,38 @@ body {
     top: 489px;
 }
 
+.play-image {
+    height: 17px;
+}
+
 .watch-btn {
     width: 161px;
     height: 23px;
     left: 350px;
     top: 504px;
+    color: #FF9900;
+    background-color: white;
+    border: none;
 }
 
 /*SECOND SECTION*/
 .second-section {
-    text-align: center;
     margin-bottom: 100px;
 }
 
 .first-div-second-section {
     width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 .tool-title {
     max-width: 539px;
+    /* align text center  */
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .tool-icon {
@@ -157,6 +189,18 @@ body {
     max-width: 178px;
 }
 
+.tool img h3 p {
+    justify-items: start;
+}
+
+.sign-up-now-btn {
+    width: 175px;
+    height: 53px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
 /*THIRD SECTION*/
 .third-section {
     display: flex;
@@ -167,6 +211,7 @@ body {
 .first-div-third-section {
     flex-direction: column;
     max-width: 486px;
+    margin-right: 100px;
 }
 
 /*FOURTH SECTION*/
@@ -175,15 +220,79 @@ body {
     margin-bottom: 100px;
 }
 
-.third-div-fourth.section {
-    flex-direction: row;
+.first-div-fourth-section {
+    margin-right: 100px;
+}
+
+.third-div-fourth-section {
+    margin-bottom: 30px;
+}
+
+.fourth-div-fourth-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.fourth-div-fourth-section li {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.fourth-div-fourth-section img {
+    height: 35px;
+    width: 35px;
+    margin-right: 40px;
 }
 
 /*FIFTH SECTION*/
 .fifth-section {
     display: flex;
+    margin-bottom: 100px;
 }
 
 .first-div-fifth-section {
     max-width: 486px;
+    margin-right: 100px;
 }
+
+/*FOOTER*/
+footer {
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.first-div-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.first-div-footer div {
+    margin-right: 50px;
+}
+
+.first-div-footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list-one, .footer-list-two {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-list-one li, .footer-list-two li {
+}
+
+.sign-up-now-btn-2 {
+    width: 131px;
+    height: 39px;
+}
+
+input[type=text] {
+    padding: 10px;
+    width: 325px;
+    margin-bottom: 10px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+  }
